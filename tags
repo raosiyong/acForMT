@@ -4,3 +4,39 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+CFLAGS	src/Makefile	/^CFLAGS := $(CFLAGS) -w  $/;"	m	language:Make
+MAKE	src/Makefile	/^	MAKE := ${MAKE} host-type=${host-type} whoami=${whoami}$/;"	m	language:Make
+MAKE	src/utils/Makefile	/^	MAKE := ${MAKE} host-type=${host-type} whoami=${whoami}$/;"	m	language:Make
+contain_of	src/cstruct.c	27;"	d	language:C	file:
+cur-dir	src/Makefile	/^	cur-dir := $(shell pwd)$/;"	m	language:Make
+cur-dir	src/utils/Makefile	/^	cur-dir := $(shell pwd)$/;"	m	language:Make
+host-type	src/Makefile	/^	host-type := $(shell arch)$/;"	m	language:Make
+host-type	src/utils/Makefile	/^	host-type := $(shell arch)$/;"	m	language:Make
+id	src/cstruct.c	/^    int id;$/;"	m	language:C	struct:p1	file:
+id	src/cstruct.c	/^    int id;$/;"	m	language:C	struct:p2	file:
+main	src/cstruct.c	/^int main(int argc,char ** argv){$/;"	f	language:C	signature:(int argc,char ** argv)
+name	src/cstruct.c	/^    char name[20];$/;"	m	language:C	struct:p1	file:
+name	src/cstruct.c	/^    char name[20];$/;"	m	language:C	struct:p2	file:
+objects	src/Makefile	/^objects = cstruct.o utils.o$/;"	m	language:Make
+objects	src/utils/Makefile	/^objects = utils.o nettools.o$/;"	m	language:Make
+offset_of	src/cstruct.c	28;"	d	language:C	file:
+p1	src/cstruct.c	/^struct p1{$/;"	s	language:C	file:
+p2	src/cstruct.c	/^struct p2{$/;"	s	language:C	file:
+pp1	src/cstruct.c	/^    struct p1 * pp1;$/;"	m	language:C	struct:s1	typeref:struct:s1::p1	file:
+priv	src/cstruct.c	/^    char priv[0];$/;"	m	language:C	struct:p1	file:
+priv	src/cstruct.c	/^    char priv[0];$/;"	m	language:C	struct:p2	file:
+priv	src/cstruct.c	/^    char priv[0];$/;"	m	language:C	struct:s1	file:
+ps1	src/cstruct.c	/^    struct s1 * ps1;$/;"	m	language:C	struct:ss1	typeref:struct:ss1::s1	file:
+s1	src/cstruct.c	/^struct s1{$/;"	s	language:C	file:
+sources	src/Makefile	/^sources = cstruct.c$/;"	m	language:Make
+sources	src/utils/Makefile	/^sources = utils.c nettools.c$/;"	m	language:Make
+ss1	src/cstruct.c	/^struct ss1{$/;"	s	language:C	file:
+stat	src/cstruct.c	/^    int stat;$/;"	m	language:C	struct:ss1	file:
+target	src/Makefile	/^target = cstruct$/;"	m	language:Make
+target	src/utils/Makefile	/^target = libutils.so$/;"	m	language:Make
+testBacklog	src/backlog.c	/^void testBacklog(void)$/;"	f	language:C	signature:(void)
+testNetTools	src/utils/nettools.c	/^void testNetTools(void)$/;"	f	language:C	signature:(void)
+testUtils	src/utils/utils.c	/^void testUtils(void)$/;"	f	language:C	signature:(void)
+version	src/cstruct.c	/^    char version[20];$/;"	m	language:C	struct:s1	file:
+whoami	src/Makefile	/^	whoami := $(shell whoami)$/;"	m	language:Make
+whoami	src/utils/Makefile	/^	whoami := $(shell whoami)$/;"	m	language:Make

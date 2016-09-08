@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "cstruct.h"
 
 struct p1{
     int id;
@@ -26,7 +27,7 @@ struct ss1{
 #define contain_of
 #define offset_of
 
-
+ 
 
 int main(int argc,char ** argv){
     printf("Hello world!\r\n");
@@ -34,6 +35,9 @@ int main(int argc,char ** argv){
     printf("S1 offset:%p priv:%p %p\r\n",is1,is1->priv,&is1->priv);
     free(is1);
     printf("cstruct end\r\n");
+    testBacklog();
+    testUtils();
+    testNetTools();
     return 0;
 }
 
